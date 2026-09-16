@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supportiva - AI Customer Support</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- using a normal google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <img src="assets/images/logo-img.png" alt="Supportiva logo" class="logo-icon" />
+      </div>
+
+      <!-- desktop nav links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#" class="nav-link">Product</a>
+        <a href="#" class="nav-link">Features</a>
+        <a href="#" class="nav-link">Solution</a>
+        <a href="#" class="nav-link">Pricing</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="signin-link">Sign In</a>
+        <a href="#" class="btn btn-primary">Start Free</a>
+      </div>
+
+      <!-- hamburger, only shows on mobile -->
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- mobile dropdown menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#">Product</a>
+      <a href="#">Features</a>
+      <a href="#">Solution</a>
+      <a href="#">Pricing</a>
+      <a href="#" class="signin-link">Sign In</a>
+      <a href="#" class="btn btn-primary">Start Free</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero-blue-sky-image.jpg" alt="sky background" class="hero-bg-img" />
+    </div>
+
+    <div class="hero-content">
+      <h1>The Smartest Support<br />Team Is Always Online</h1>
+
+      <a href="#" class="btn btn-white">Start Free - No Card</a>
+
+      <!-- little trust row under the button -->
+      <div class="hero-trust">
+        <div class="avatar-stack">
+          <img src="assets/images/icon-person-1.png" alt="user avatar" />
+          <img src="assets/images/icon-person-2.png" alt="user avatar" />
+          <img src="assets/images/icon-person-3.jpg" alt="user avatar" />
+           <img src="assets/images/icon-person-4.png" alt="user avatar" />
+        </div>
+        <span>10,000+ teams & 4.9/5 average rating</span>
+      </div>
+
+      <!-- product screenshot / dashboard mockup -->
+      <div class="hero-image-wrap img-zoom">
+        <img src="assets/images/dashboard.png" alt="Supportiva dashboard preview" class="hero-image" />
+      </div>
+
+      <p class="hero-caption">
+        <strong>Supportiva</strong> resolves every conversation with real-time AI —
+        <a href="#">live chat, sentiment detection, ticket summaries</a>, and instant reply suggestions.
+        Your support, reimagined.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ STATS ROW ============ -->
+  <section class="stats-section">
+    <div class="stats-wrap">
+      <div class="stat-card stat-blue">
+        <span class="stat-number">2.4x</span>
+        <span class="stat-label">Faster response time</span>
+      </div>
+      <div class="stat-card stat-green">
+        <span class="stat-number">98%</span>
+        <span class="stat-label">Customer satisfaction</span>
+      </div>
+      <div class="stat-card stat-dark">
+        <span class="stat-number">0.3s</span>
+        <span class="stat-label">AI reply suggestion</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features-section">
+    <div class="features-header">
+      <h2>AI that works<br />inside every conversation</h2>
+      <a href="#" class="btn btn-dark-outline">See all Features</a>
+    </div>
+
+    <div class="feature-cards">
+      <div class="card feature-card">
+        <h3>Smart Ticket Summaries</h3>
+        <p>Every thread condensed to the essentials — saved, sorted and clear. No more digging.</p>
+        <div class="card-mock">
+          <span>Ticket #4821</span>
+          <ul>
+            <li>Customer had trouble with billing</li>
+            <li>Issue resolved, refund issued</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card feature-card">
+        <h3>Sentiment Detection</h3>
+        <p>Supportiva reads customer emotion instantly — before frustration escalates.</p>
+        <div class="card-mock">
+          <div class="sentiment-bar">
+            <span class="sentiment-fill"></span>
+          </div>
+          <span class="sentiment-label">Positive 92%</span>
+        </div>
+      </div>
+
+      <div class="card feature-card">
+        <h3>Live Reply Suggestions</h3>
+        <p>On-brand, context-aware replies suggested — agents approve in one click.</p>
+        <div class="card-mock">
+          <p class="fake-reply">"Sure! I can help you with that right away."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UNFAIR ADVANTAGE ============ -->
+  <section class="advantage-section">
+    <h2>An Unfair Advantage<br />in Every Conversation</h2>
+
+    <div class="advantage-grid">
+      <div class="advantage-photo img-zoom">
+        <img src="assets/images/happy-girl.jpg" alt="support agent working" />
+      </div>
+
+      <div class="advantage-panel">
+        <div class="lang-card">
+          <p>40+ Languages</p>
+          <div class="lang-flags">
+            <span>🇪🇸</span><span>🇫🇷</span><span>🇩🇪</span><span>🇯🇵</span><span>🇵🇹</span>
+          </div>
+        </div>
+        <div class="agents-online-card">
+          <p>Agents online</p>
+          <h3>312 <span>/ 640</span></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="elevate-row">
+      <div>
+        <h3>Elevate every customer conversation</h3>
+        <ul class="check-list">
+          <li>✔ 73% Ticket Deflection</li>
+          <li>✔ 24/7 First Response</li>
+        </ul>
+      </div>
+      <a href="#" class="btn btn-primary">GET STARTED →</a>
+    </div>
+  </section>
+
+  <!-- ============ RESULTS / TESTIMONIAL ============ -->
+  <section class="results-section">
+    <h2>Results That<br />Speak for Themselves</h2>
+
+    <div class="results-grid">
+      <div class="testimonial-card">
+        <img src="assets/images/confident-bussiness-man.jpg" alt="Marcus Reyes" class="testimonial-photo" />
+        <div class="stars">★★★★★</div>
+        <p>"We cut first-response time from hours to under minutes. Supportiva drafts the reply, my team just approves it — our CSAT has never been higher."</p>
+        <div class="testimonial-author">
+          <strong>Marcus Reyes</strong>
+          <span>Head of Support</span>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <span class="chart-label">CSAT This Week</span>
+        <div class="bars">
+          <span style="height:30%"></span>
+          <span style="height:45%"></span>
+          <span style="height:55%"></span>
+          <span style="height:70%"></span>
+          <span style="height:90%"></span>
+        </div>
+        <span class="chart-number">4.9<small>/5</small></span>
+      </div>
+    </div>
+
+    <p class="trusted-label">TRUSTED BY FAST-GROWING TEAMS</p>
+    <div class="logo-row">
+      <span>Western Union</span>
+      <span>Webflow</span>
+      <span>Grab</span>
+      <span>gojek</span>
+      <span>FedEx</span>
+      <span>Kudos</span>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="pricing-section">
+    <h2>One Plan Away<br />from Better Support</h2>
+
+    <div class="billing-toggle">
+      <button class="toggle-btn active" data-plan="monthly">Monthly</button>
+      <button class="toggle-btn" data-plan="yearly">Yearly <small>-20%</small></button>
+    </div>
+
+    <div class="pricing-cards">
+      <div class="card price-card">
+        <span class="plan-name">Starter</span>
+        <p class="plan-desc">For teams just getting started with support</p>
+        <div class="price"><span class="amount">$0</span><span>/mo</span></div>
+        <a href="#" class="btn btn-outline">Start Free</a>
+        <ul class="plan-features">
+          <li>✔ Up to 3 agents</li>
+          <li>✔ 200 AI replies / month</li>
+          <li>✔ Ticket summaries</li>
+          <li>✔ Email & chat channels</li>
+        </ul>
+      </div>
+
+      <div class="card price-card featured">
+        <span class="popular-tag">MOST POPULAR</span>
+        <span class="plan-name">Professional</span>
+        <p class="plan-desc">For growing teams that need more power</p>
+        <div class="price"><span class="amount">$31</span><span>/mo</span></div>
+        <a href="#" class="btn btn-primary">Start on a Free Trial</a>
+        <ul class="plan-features">
+          <li>✔ Unlimited AI replies</li>
+          <li>✔ Sentiment detection</li>
+          <li>✔ 40+ languages</li>
+          <li>✔ Analytics dashboard</li>
+        </ul>
+      </div>
+
+      <div class="card price-card dark">
+        <span class="plan-name">Enterprise</span>
+        <p class="plan-desc">Custom pricing for larger organizations</p>
+        <div class="price"><span class="amount">Custom</span></div>
+        <a href="#" class="btn btn-white">Contact Sales</a>
+        <ul class="plan-features">
+          <li>✔ Everything in Professional</li>
+          <li>✔ Custom onboarding</li>
+          <li>✔ SLA & SSO</li>
+          <li>✔ Dedicated success manager</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="cta-banner">
+    <div class="cta-bg">
+      <img src="assets/images/hero-blue-sky-image.jpg" alt="sky background" />
+    </div>
+    <div class="cta-content">
+      <h2>Join 50,000+ Teams Delivering<br />Faster Customer Support</h2>
+      <a href="#" class="btn btn-white">Start Free Today</a>
+      <div class="cta-dashboard img-zoom">
+        <img src="assets/images/dashboard.png" alt="analytics dashboard preview" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="newsletter">
+      <div>
+        <h3>Subscribe to our newsletter</h3>
+        <p>Get the latest support tips straight to your inbox.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="assets/images/logo-img.png" alt="Supportiva logo" class="logo-icon" />
+          <span>SUPPORTIVA</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#">Product</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="#">Blog</a>
+        <a href="#">Guides</a>
+        <a href="#">Help Center</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Supportiva. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#">𝕏</a>
+        <a href="#">f</a>
+        <a href="#">in</a>
+        <a href="#">ig</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
