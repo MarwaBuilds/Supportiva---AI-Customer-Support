@@ -530,7 +530,17 @@ ul {
   gap: 24px;
   text-align: left;
 }
+
+
+.advantage-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== advantage photo with floating badge ===== */
 .advantage-photo {
+  position: relative; /* needed so the badge can sit on top */
   border-radius: 18px;
   aspect-ratio: 16 / 10;
 }
@@ -539,43 +549,186 @@ ul {
   height: 100%;
   object-fit: cover;
 }
-.advantage-panel {
+
+.photo-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 14px;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 260px;
 }
-.lang-card,
-.agents-online-card {
+.badge-icon {
+  background: var(--blue);
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.photo-badge strong {
+  display: block;
+  font-size: 13px;
+}
+.photo-badge span {
+  font-size: 11px;
+  color: var(--gray-text);
+}
+
+/* ===== language card ===== */
+.lang-card {
   background: #fff;
   border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 20px;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.lang-card:hover,
+.lang-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+}
+.lang-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.lang-icon {
+  background: var(--light-bg);
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lang-card-header strong {
+  display: block;
+  font-size: 14px;
+}
+.lang-card-header span {
+  font-size: 12px;
+  color: var(--gray-text);
+}
+.lang-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pill {
+  background: var(--light-bg);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.pill-dark {
+  background: var(--dark);
+  color: #fff;
+}
+
+/* ===== two mini cards side by side ===== */
+.mini-cards-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.agents-online-card {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 .agents-online-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
 }
-.lang-flags {
-  display: flex;
-  gap: 8px;
+.agents-online-card strong {
+  display: block;
+  font-size: 14px;
   margin-top: 10px;
-  font-size: 20px;
 }
-.agents-online-card {
+.agents-online-card span {
+  font-size: 12px;
+  color: var(--gray-text);
+}
+
+.small-stack {
+  display: flex;
+  align-items: center;
+}
+.small-stack img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  margin-left: -8px;
+}
+.small-stack img:first-child {
+  margin-left: 0;
+}
+.stack-count {
+  background: var(--light-bg);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: -8px;
+}
+
+.resolved-card {
   background: var(--blue);
   color: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.agents-online-card h3 {
-  font-size: 30px;
-  margin-top: 8px;
+.resolved-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
 }
-.agents-online-card h3 span {
-  font-size: 16px;
+.resolved-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+.resolved-card h3 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+.resolved-card h3 span {
+  font-size: 14px;
   opacity: 0.7;
+}
+.progress-bar {
+  background: rgba(255, 255, 255, 0.3);
+  height: 6px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress-fill {
+  display: block;
+  width: 90%;
+  height: 100%;
+  background: #fff;
 }
 
 .elevate-row {
