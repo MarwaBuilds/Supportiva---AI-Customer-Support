@@ -531,7 +531,6 @@ ul {
   text-align: left;
 }
 
-
 .advantage-panel {
   display: flex;
   flex-direction: column;
@@ -589,7 +588,9 @@ ul {
   border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 20px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 .lang-card:hover {
   transform: translateY(-6px);
@@ -647,7 +648,9 @@ ul {
   border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 18px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 .agents-online-card:hover {
   transform: translateY(-6px);
@@ -696,7 +699,9 @@ ul {
   color: #fff;
   border-radius: 16px;
   padding: 18px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 .resolved-card:hover {
   transform: translateY(-6px);
