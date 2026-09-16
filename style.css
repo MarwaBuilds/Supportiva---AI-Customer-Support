@@ -119,12 +119,11 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 32px;
+  padding: 2px 5px; 
   transition: padding 0.3s ease;
 }
-
 .navbar.scrolled .nav-inner {
-  padding: 10px 32px; /* shrinks a bit on scroll */
+  padding: 6px 32px;  
 }
 
 .logo {
@@ -247,7 +246,7 @@ ul {
   z-index: 1;
   max-width: 900px;
   margin: 0 auto;
-  perspective: 1500px;   /* 👈 add this line */
+  perspective: 1500px;   
 }
 
 .hero h1 {
@@ -641,13 +640,6 @@ ul {
   font-size: 36px;
   margin-bottom: 24px;
 }
-.billing-toggle {
-  display: inline-flex;
-  background: var(--light-bg);
-  border-radius: 40px;
-  padding: 4px;
-  margin-bottom: 40px;
-}
 .toggle-btn {
   border: none;
   background: transparent;
@@ -744,7 +736,7 @@ ul {
   z-index: 1;
   max-width: 900px;
   margin: 0 auto;
-  perspective: 1500px;   /* 👈 add this line */
+  perspective: 1500px;  
 }
 
 .cta-content h2 {
@@ -757,10 +749,10 @@ ul {
   border-radius: 16px;
   overflow: hidden;
   aspect-ratio: 16 / 8;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.4);          /* 👈 updated, a bit stronger */
-  transform: rotateX(28deg) rotateY(-6deg) rotate(-2deg);  /* 👈 add */
-  transform-style: preserve-3d;                              /* 👈 add */
-  transition: transform 0.5s ease;                           /* 👈 add */
+  box-shadow: 0 40px 80px rgba(0,0,0,0.4);          
+  transform: rotateX(28deg) rotateY(-6deg) rotate(-2deg);
+  transform-style: preserve-3d;                            
+  transition: transform 0.5s ease;                         
 }
 .cta-dashboard img {
   width: 100%;
